@@ -19,14 +19,14 @@
       --danger: #d63031;
       --warning: #fdcb6e;
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
-    
+
     body {
       background-color: var(--dark);
       color: var(--light);
@@ -37,7 +37,7 @@
       padding: 20px;
       background-image: radial-gradient(circle at 10% 20%, rgba(108, 92, 231, 0.1) 0%, rgba(0, 0, 0, 0.9) 90%);
     }
-    
+
     .app-container {
       width: 100%;
       max-width: 420px;
@@ -48,14 +48,14 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
       backdrop-filter: blur(10px);
     }
-    
+
     .header {
       background: linear-gradient(135deg, var(--primary), var(--accent));
       padding: 20px;
       text-align: center;
       position: relative;
     }
-    
+
     .logo {
       font-size: 24px;
       font-weight: 700;
@@ -65,11 +65,11 @@
       justify-content: center;
       gap: 10px;
     }
-    
+
     .logo i {
       font-size: 28px;
     }
-    
+
     .user-info {
       display: flex;
       align-items: center;
@@ -79,7 +79,7 @@
       padding: 10px 15px;
       border-radius: 8px;
     }
-    
+
     .user-info .avatar {
       width: 40px;
       height: 40px;
@@ -91,30 +91,30 @@
       color: var(--dark);
       font-weight: bold;
     }
-    
+
     .user-details {
       flex: 1;
       margin-left: 15px;
       text-align: left;
     }
-    
+
     .user-details .name {
       font-weight: 600;
       font-size: 16px;
     }
-    
+
     .user-details .id {
       font-size: 12px;
       opacity: 0.8;
     }
-    
+
     .stats-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
       padding: 20px;
     }
-    
+
     .stat-card {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 10px;
@@ -122,42 +122,42 @@
       text-align: center;
       transition: transform 0.3s;
     }
-    
+
     .stat-card:hover {
       transform: translateY(-5px);
       background: rgba(255, 255, 255, 0.1);
     }
-    
+
     .stat-card .value {
       font-size: 24px;
       font-weight: 700;
       color: var(--accent);
       margin: 5px 0;
     }
-    
+
     .stat-card .label {
       font-size: 12px;
       opacity: 0.7;
     }
-    
+
     .progress-container {
       padding: 0 20px 20px;
     }
-    
+
     .progress-title {
       display: flex;
       justify-content: space-between;
       margin-bottom: 10px;
       font-size: 14px;
     }
-    
+
     .progress-bar {
       height: 10px;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 5px;
       overflow: hidden;
     }
-    
+
     .progress-fill {
       height: 100%;
       background: linear-gradient(90deg, var(--primary), var(--accent));
@@ -165,16 +165,15 @@
       width: 0%;
       transition: width 0.5s ease;
     }
-    
+
     .actions-container {
       padding: 0 20px 20px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
-    
-    .action-btn {
-      background: rgba(255, 255, 255, 0.05);
+
+    .action-btn {background: rgba(255, 255, 255, 0.05);
       border: none;
       border-radius: 10px;
       padding: 15px;
@@ -188,7 +187,7 @@
       position: relative;
       overflow: hidden;
     }
-    
+
     .action-btn::before {
       content: '';
       position: absolute;
@@ -199,43 +198,43 @@
       background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
       transition: 0.5s;
     }
-    
+
     .action-btn:hover::before {
       left: 100%;
     }
-    
+
     .action-btn:hover {
       background: rgba(255, 255, 255, 0.1);
       transform: translateY(-3px);
     }
-    
+
     .action-btn i {
       font-size: 24px;
       margin-bottom: 10px;
     }
-    
+
     .action-btn .btn-label {
       font-size: 14px;
       font-weight: 500;
     }
-    
+
     .primary-btn {
       background: linear-gradient(135deg, var(--primary), var(--accent));
     }
-    
+
     .success-btn {
       background: linear-gradient(135deg, var(--success), #55efc4);
     }
-    
+
     .danger-btn {
       background: linear-gradient(135deg, var(--danger), #ff7675);
     }
-    
+
     .warning-btn {
       background: linear-gradient(135deg, var(--warning), #ffeaa7);
       color: var(--dark);
     }
-    
+
     .referral-section {
       padding: 20px;
       background: rgba(0, 0, 0, 0.2);
@@ -243,7 +242,7 @@
       border-radius: 10px;
       text-align: center;
     }
-    
+
     .referral-title {
       font-size: 16px;
       margin-bottom: 10px;
@@ -252,7 +251,7 @@
       justify-content: center;
       gap: 8px;
     }
-    
+
     .referral-link {
       background: rgba(255, 255, 255, 0.1);
       padding: 10px;
@@ -264,7 +263,7 @@
       font-size: 14px;
       word-break: break-all;
     }
-    
+
     .copy-btn {
       background: var(--primary);
       border: none;
@@ -275,11 +274,11 @@
       margin-left: 10px;
       transition: background 0.3s;
     }
-    
+
     .copy-btn:hover {
       background: var(--accent);
     }
-    
+
     .bonus-badge {
       background: var(--warning);
       color: var(--dark);
@@ -289,7 +288,7 @@
       font-weight: 600;
       margin-left: 5px;
     }
-    
+
     .modal {
       position: fixed;
       top: 0;
@@ -305,12 +304,12 @@
       pointer-events: none;
       transition: opacity 0.3s;
     }
-    
+
     .modal.active {
       opacity: 1;
       pointer-events: all;
     }
-    
+
     .modal-content {
       background: var(--dark);
       border-radius: 16px;
@@ -322,23 +321,23 @@
       transition: transform 0.3s;
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    
+
     .modal.active .modal-content {
       transform: translateY(0);
     }
-    
+
     .modal-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
     }
-    
+
     .modal-title {
       font-size: 20px;
       font-weight: 600;
     }
-    
+
     .close-btn {
       background: none;
       border: none;
@@ -348,23 +347,22 @@
       opacity: 0.7;
       transition: opacity 0.3s;
     }
-    
+
     .close-btn:hover {
       opacity: 1;
     }
-    
+
     .form-group {
       margin-bottom: 15px;
     }
-    
+
     .form-label {
       display: block;
       margin-bottom: 8px;
       font-size: 14px;
       opacity: 0.8;
     }
-    
-    .form-input {
+      .form-input {
       width: 100%;
       padding: 12px 15px;
       background: rgba(255, 255, 255, 0.1);
@@ -374,12 +372,12 @@
       font-size: 14px;
       transition: border 0.3s;
     }
-    
+
     .form-input:focus {
       outline: none;
       border-color: var(--accent);
     }
-    
+
     .form-select {
       width: 100%;
       padding: 12px 15px;
@@ -394,7 +392,7 @@
       background-position: right 10px center;
       background-size: 15px;
     }
-    
+
     .submit-btn {
       width: 100%;
       padding: 14px;
@@ -408,12 +406,12 @@
       margin-top: 10px;
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    
+
     .submit-btn:hover {
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(108, 92, 231, 0.4);
     }
-    
+
     .status-message {
       margin-top: 15px;
       padding: 10px;
@@ -422,24 +420,24 @@
       text-align: center;
       display: none;
     }
-    
+
     .success-message {
       background: rgba(0, 184, 148, 0.2);
       border: 1px solid var(--success);
       color: var(--success);
     }
-    
+
     .error-message {
       background: rgba(214, 48, 49, 0.2);
       border: 1px solid var(--danger);
       color: var(--danger);
     }
-    
+
     .video-container {
       margin-top: 20px;
       display: none;
     }
-    
+
     .video-frame {
       width: 100%;
       height: 200px;
@@ -447,14 +445,14 @@
       overflow: hidden;
       border: none;
     }
-    
+
     .video-instruction {
       font-size: 12px;
       text-align: center;
       margin-top: 10px;
       opacity: 0.7;
     }
-    
+
     .badge {
       display: inline-block;
       padding: 3px 8px;
@@ -465,12 +463,49 @@
       background: var(--accent);
       color: var(--dark);
     }
-    
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--dark);
+      color: var(--light);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      z-index: 2000;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .toast.active {
+      display: block;
+      opacity: 1;
+      transform: translateX(-50%) translateY(-10px);
+    }
+
+    .toast.success {
+      background: var(--success);
+      color: white;
+    }
+
+    .toast.error {
+      background: var(--danger);
+      color: white;
+    }
+
+    .toast.info {
+      background: var(--primary);
+      color: white;
+    }
+
     @media (max-width: 480px) {
       .stats-container {
         grid-template-columns: 1fr;
       }
-      
+
       .actions-container {
         grid-template-columns: 1fr;
       }
@@ -582,7 +617,7 @@
       </div>
       
       <div class="form-group">
-        <label class="form-label">Amount (Min: 000 points)</label>
+        <label class="form-label">Amount (Min: 500 points)</label>
         <input type="number" class="form-input" id="withdraw-amount" placeholder="Enter points to withdraw" min="500">
       </div>
       
@@ -600,7 +635,6 @@
       </div>
       
       <button class="submit-btn" id="submit-withdraw">Request Withdrawal</button>
-      
       <div class="status-message" id="withdraw-status"></div>
     </div>
   </div>
@@ -622,364 +656,419 @@
     </div>
   </div>
 
-  <script>
-    // Configuration
-    const CONFIG = {
-      MIN_WITHDRAW: 500,
-      ADMIN_USER_ID: "7688575707",
-      BOT_TOKEN: "8230911673:AAGSXV7jbIGrZaFQeZ7c9o41vATWO6YwISs",
-      YOUTUBE_VIDEOS: [
-        "",
-        "",
-        ""
-      ],
-      AD_PROVIDERS: [
-        '//libtl.com/sdk.js',
-        '//pl26942056.profitableratecpm.com/e9/71/cb/e971cb51bff4286deb8e3f3bdc652cc7.js'
-      ]
-    };
-    
-function watchAd() {
-  if (typeof show_9635778 === 'function') {
-    show_9635778().then(() => {
-      watchedAdsCount++;
-      earnedPoints += 0.50;
-      updateStats();
-      updateProgressCircle();
+  <!-- Toast Notification -->
+  <div class="toast" id="toast-notification"></div>
+
+<script>
+  // Configuration
+  const CONFIG = {
+    MIN_WITHDRAW: 500,
+    ADMIN_USER_ID: "7688575707",
+    BOT_TOKEN: "8230911673:AAGSXV7jbIGrZaFQeZ7c9o41vATWO6YwISs",
+    YOUTUBE_VIDEOS: [
+      "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "https://www.youtube.com/embed/3tmd-ClpJxA",
+      "https://www.youtube.com/embed/kJQP7kiw5Fk"
+    ],
+    AD_PROVIDERS: [
+      '//libtl.com/sdk.js',
+      '//pl26942056.profitableratecpm.com/e9/71/cb/e971cb51bff4286deb8e3f3bdc652cc7.js'
+    ],
+    VIDEO_WATCH_TIME: 30, // seconds
+    MONETAG_ZONE_ID: '9635778'
+  };
+
+  // State management
+  const state = {
+    watchedAds: 0,
+    earnedPoints: 0,
+    autoAdInterval: null,
+    currentVideo: null,
+    videoCheckInterval: null,
+    username: "@exampleUser",
+    userId: Math.floor(100000 + Math.random() * 900000),
+    referralCopied: false,
+    tgBonusClaimed: false,
+    lastAdWatched: null
+  };
+
+  // DOM Elements
+  const elements = {
+    userName: document.getElementById('user-name'),
+    watchedAds: document.getElementById('watched-ads'),
+    earnedPoints: document.getElementById('earned-points'),
+    adsProgress: document.getElementById('ads-progress'),
+    progressFill: document.getElementById('progress-fill'),
+    watchAdBtn: document.getElementById('watch-ad-btn'),
+    autoAdBtn: document.getElementById('auto-ad-btn'),
+    stopAutoBtn: document.getElementById('stop-auto-btn'),
+    watchVideoBtn: document.getElementById('watch-video-btn'),
+    joinTgBtn: document.getElementById('join-tg-bonus'),
+    withdrawBtn: document.getElementById('withdraw-btn'),
+    referralLink: document.getElementById('referral-link'),
+    copyRefBtn: document.getElementById('copy-ref-btn'),
+    videoContainer: document.getElementById('video-container'),
+    withdrawModal: document.getElementById('withdraw-modal'),
+    closeWithdrawModal: document.getElementById('close-withdraw-modal'),
+    withdrawAmount: document.getElementById('withdraw-amount'),
+    paymentMethod: document.getElementById('payment-method'),
+    withdrawAccount: document.getElementById('withdraw-account'),
+    submitWithdraw: document.getElementById('submit-withdraw'),
+    withdrawStatus: document.getElementById('withdraw-status'),
+    videoAdModal: document.getElementById('video-ad-modal'),
+    closeVideoModal: document.getElementById('close-video-modal'),
+    videoAdContainer: document.getElementById('video-ad-container'),
+    videoStatus: document.getElementById('video-status'),
+    toast: document.getElementById('toast-notification')
+  };
+
+  // Initialize the app
+  function init() {
+    loadState();
+    updateUI();
+    setupEventListeners();
+    loadAdScripts();
+  }
+
+  // Load ad provider scripts dynamically
+  function loadAdScripts() {
+    CONFIG.AD_PROVIDERS.forEach(src => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.onload = () => console.log(Ad script loaded: ${src});
+      script.onerror = () => {
+        console.error(Failed to load ad script: ${src});
+        showNotification('এড প্রোভাইডার লোড করতে ব্যর্থ। দয়া করে পরে আবার চেষ্টা করুন।', 'error');
+      };
+      document.body.appendChild(script);
     });
   }
-}
-
-    // State management
-    const state = {
-      watchedAds: 0,
-      earnedPoints: 0,
-      autoAdInterval: null,
-      currentVideo: null,
-      videoCheckInterval: null,
-      username: "@exampleUser",
-      userId: Math.floor(100000 + Math.random() * 900000),
-      referralCopied: false,
-      tgBonusClaimed: false
-    };
-    
-    // DOM Elements
-    const elements = {
-      userName: document.getElementById('user-name'),
-      watchedAds: document.getElementById('watched-ads'),
-      earnedPoints: document.getElementById('earned-points'),
-      adsProgress: document.getElementById('ads-progress'),
-      progressFill: document.getElementById('progress-fill'),
-      watchAdBtn: document.getElementById('watch-ad-btn'),
-      autoAdBtn: document.getElementById('auto-ad-btn'),
-      stopAutoBtn: document.getElementById('stop-auto-btn'),
-      watchVideoBtn: document.getElementById('watch-video-btn'),
-      joinTgBtn: document.getElementById('join-tg-bonus'),
-      withdrawBtn: document.getElementById('withdraw-btn'),
-      referralLink: document.getElementById('referral-link'),
-      copyRefBtn: document.getElementById('copy-ref-btn'),
-      videoContainer: document.getElementById('video-container'),
-      withdrawModal: document.getElementById('withdraw-modal'),
-      closeWithdrawModal: document.getElementById('close-withdraw-modal'),
-      withdrawAmount: document.getElementById('withdraw-amount'),
-      paymentMethod: document.getElementById('payment-method'),
-      withdrawAccount: document.getElementById('withdraw-account'),
-      submitWithdraw: document.getElementById('submit-withdraw'),
-      withdrawStatus: document.getElementById('withdraw-status'),
-      videoAdModal: document.getElementById('video-ad-modal'),
-      closeVideoModal: document.getElementById('close-video-modal'),
-      videoAdContainer: document.getElementById('video-ad-container'),
-      videoStatus: document.getElementById('video-status')
-    };
-    
-    // Initialize the app
-    function init() {
-      loadState();
-      updateUI();
-      setupEventListeners();
-    }
-    
-    // Load state from localStorage
-    function loadState() {
+  // Load state from localStorage
+  function loadState() {
+    try {
       if (localStorage.getItem('moneyTagState')) {
         const savedState = JSON.parse(localStorage.getItem('moneyTagState'));
         state.watchedAds = savedState.watchedAds || 0;
         state.earnedPoints = savedState.earnedPoints || 0;
         state.referralCopied = savedState.referralCopied || false;
         state.tgBonusClaimed = savedState.tgBonusClaimed || false;
+        state.lastAdWatched = savedState.lastAdWatched || null;
       }
-      
-      // Set username and ID
       elements.userName.textContent = state.username;
-      elements.referralLink.firstChild.textContent = `https://t.me/gotraps_bot?ref=${state.userId}`;
+      elements.referralLink.firstChild.textContent = https://t.me/tasksworknew_bot?ref=${state.userId};
+    } catch (error) {
+      console.error('Error loading state:', error);
+      showNotification('ইউজার ডেটা লোড করতে ব্যর্থ। দয়া করে রিফ্রেশ করুন।', 'error');
     }
-    
-    // Save state to localStorage
-    function saveState() {
+  }
+
+  // Save state to localStorage
+  function saveState() {
+    try {
       localStorage.setItem('moneyTagState', JSON.stringify({
         watchedAds: state.watchedAds,
         earnedPoints: state.earnedPoints,
         referralCopied: state.referralCopied,
-        tgBonusClaimed: state.tgBonusClaimed
+        tgBonusClaimed: state.tgBonusClaimed,
+        lastAdWatched: state.lastAdWatched
       }));
+    } catch (error) {
+      console.error('Error saving state:', error);
+      showNotification('ডেটা সংরক্ষণ করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Update all UI elements
-    function updateUI() {
+  }
+
+  // Update all UI elements
+  function updateUI() {
+    try {
       elements.watchedAds.textContent = state.watchedAds;
       elements.earnedPoints.textContent = state.earnedPoints.toFixed(2);
-      
-      // Calculate progress (example: max 20 ads per day)
-      const progress = Math.min((state.watchedAds / 20) * 100, 100);
-      elements.adsProgress.textContent = `${Math.floor(progress)}%`;
-      elements.progressFill.style.width = `${progress}%`;
-      
-      // Enable/disable withdraw button based on points
+      // Remove progress bar update since no daily limit
+      elements.adsProgress.textContent = 'আনলিমিটেড';
+      elements.progressFill.style.width = '100%'; // Show full progress bar for unlimited ads
       elements.withdrawBtn.disabled = state.earnedPoints < CONFIG.MIN_WITHDRAW;
+      elements.watchAdBtn.disabled = false; // Always enabled for unlimited ads
+      elements.watchVideoBtn.disabled = !CONFIG.YOUTUBE_VIDEOS.length;
+    } catch (error) {
+      console.error('Error updating UI:', error);
+      showNotification('ইউআই আপডেট করতে ব্যর্থ। দয়া করে রিফ্রেশ করুন।', 'error');
     }
-    
-    // Set up event listeners
-    function setupEventListeners() {
-      // Watch ad button
-      elements.watchAdBtn.addEventListener('click', watchAd);
-      
-      // Auto ads buttons
-      elements.autoAdBtn.addEventListener('click', startAutoAds);
-      elements.stopAutoBtn.addEventListener('click', stopAutoAds);
-      
-      // Watch video button
-      elements.watchVideoBtn.addEventListener('click', showVideoAd);
-      
-      // Join Telegram button
-      elements.joinTgBtn.addEventListener('click', joinTelegramBonus);
-      
-      // Withdraw button
-      elements.withdrawBtn.addEventListener('click', () => {
-        elements.withdrawModal.classList.add('active');
-      });
-      
-      // Close withdraw modal
-      elements.closeWithdrawModal.addEventListener('click', () => {
-        elements.withdrawModal.classList.remove('active');
-      });
-      
-      // Submit withdraw request
-      elements.submitWithdraw.addEventListener('click', withdrawPoints);
-      
-      // Copy referral link
-      elements.copyRefBtn.addEventListener('click', copyReferralLink);
-      
-      // Close video modal
-      elements.closeVideoModal.addEventListener('click', () => {
-        elements.videoAdModal.classList.remove('active');
-        if (state.videoCheckInterval) {
-          clearInterval(state.videoCheckInterval);
-          state.videoCheckInterval = null;
-        }
-      });
-    }
-    
-    // Watch ad function
-    function watchAd() {
-      // Simulate ad watching (in a real app, this would use an ad SDK)
-      simulateAd().then(() => {
+  }
+
+  // Set up event listeners
+  function setupEventListeners() {
+    elements.watchAdBtn.addEventListener('click', watchAd);
+    elements.autoAdBtn.addEventListener('click', startAutoAds);
+    elements.stopAutoBtn.addEventListener('click', stopAutoAds);
+    elements.watchVideoBtn.addEventListener('click', showVideoAd);
+    elements.joinTgBtn.addEventListener('click', joinTelegramBonus);
+    elements.withdrawBtn.addEventListener('click', () => {
+      elements.withdrawModal.classList.add('active');
+    });
+    elements.closeWithdrawModal.addEventListener('click', () => {
+      elements.withdrawModal.classList.remove('active');
+      elements.withdrawStatus.style.display = 'none';
+    });
+    elements.submitWithdraw.addEventListener('click', withdrawPoints);
+    elements.copyRefBtn.addEventListener('click', debounce(copyReferralLink, 500));
+    elements.closeVideoModal.addEventListener('click', () => {
+      elements.videoAdModal.classList.remove('active');
+      if (state.videoCheckInterval) {
+        clearInterval(state.videoCheckInterval);
+        state.videoCheckInterval = null;
+      }
+      elements.videoAdContainer.querySelector('iframe').src = '';
+    });
+  }
+
+  // Debounce function to prevent multiple rapid clicks
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+
+  // Watch ad function
+  async function watchAd() {
+    try {
+      elements.watchAdBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> এড লোড হচ্ছে...';
+      elements.watchAdBtn.disabled = true;
+      // Check if Monetag ad function is available
+      if (typeof window.show_9635778 === 'function') {
+        await new Promise((resolve, reject) => {
+          try {
+            window.show_9635778(() => {
+              resolve();
+            });
+          } catch (error) {
+            reject(error);
+          }
+        });
         state.watchedAds++;
         state.earnedPoints += 0.5;
+        state.lastAdWatched = Date.now();
         updateUI();
         saveState();
-        showNotification('+0.5 points earned!', 'success');
-      }).catch(() => {
-        showNotification('Ad failed to load. Please try again.', 'error');
-      });
+        showNotification('+0.5 পয়েন্ট অর্জিত!', 'success');
+      } else {
+        // Fallback to simulated ad if Monetag SDK is not loaded
+        console.warn('Monetag SDK not loaded, falling back to simulation');
+        await simulateAd();
+        state.watchedAds++;
+        state.earnedPoints += 0.5;
+        state.lastAdWatched = Date.now();
+        updateUI();
+        saveState();
+        showNotification('+0.5 পয়েন্ট অর্জিত (সিমুলেশন)!', 'success');
+      }
+    } catch (error) {
+      console.error('এড দেখার সময় ত্রুটি:', error);
+      showNotification('এড লোড করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
+    } finally {
+      elements.watchAdBtn.innerHTML = '<i class="fas fa-ad"></i> এড দেখুন';
+      elements.watchAdBtn.disabled = false;
     }
-    
-    // Simulate ad loading and watching
-    function simulateAd() {
-      return new Promise((resolve) => {
-        // Show loading state
-        elements.watchAdBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading Ad...';
-        elements.watchAdBtn.disabled = true;
-        
-        // Simulate network delay
-        setTimeout(() => {
-          elements.watchAdBtn.innerHTML = '<i class="fas fa-ad"></i> Watch Ad';
-          elements.watchAdBtn.disabled = false;
-          resolve();
-        }, 1500);
-      });
-    }
-    
-    // Start auto ads
-    function startAutoAds() {
-      state.autoAdInterval = setInterval(watchAd, 10000); // Every 10 seconds
+  }
+
+  // Simulate ad loading and watching
+  function simulateAd() {
+    return new Promise((resolve) => {
+      setTimeout(resolve, 1500);
+    });
+  }
+
+  // Start auto ads
+  function startAutoAds() {
+    try {
+      state.autoAdInterval = setInterval(watchAd, 10000);
       elements.autoAdBtn.disabled = true;
       elements.stopAutoBtn.disabled = false;
-      showNotification('Auto ads started. Watching every 10 seconds.', 'success');
+      showNotification('অটো এড শুরু হয়েছে। প্রতি ১০ সেকেন্ডে এড দেখা হবে।', 'success');
+    } catch (error) {
+      console.error('অটো এড শুরু করার সময় ত্রুটি:', error);
+      showNotification('অটো এড শুরু করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Stop auto ads
-    function stopAutoAds() {
+  }
+
+  // Stop auto ads
+  function stopAutoAds() {
+    try {
       clearInterval(state.autoAdInterval);
       state.autoAdInterval = null;
       elements.autoAdBtn.disabled = false;
       elements.stopAutoBtn.disabled = true;
-      showNotification('Auto ads stopped.', 'info');
+      showNotification('অটো এড বন্ধ করা হয়েছে।', 'info');
+    } catch (error) {
+      console.error('অটো এড বন্ধ করার সময় ত্রুটি:', error);
+      showNotification('অটো এড বন্ধ করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Show video ad
-    function showVideoAd() {
+  }
+
+  // Show video ad
+  function showVideoAd() {
+    try {
+      if (!CONFIG.YOUTUBE_VIDEOS.length) {
+        showNotification('কোনো ভিডিও এড উপলব্ধ নেই।', 'error');
+        return;
+      }
       const randomVideo = CONFIG.YOUTUBE_VIDEOS[Math.floor(Math.random() * CONFIG.YOUTUBE_VIDEOS.length)];
       const iframe = elements.videoAdContainer.querySelector('iframe');
       iframe.src = randomVideo + "?autoplay=1";
-      
-      // Show modal
       elements.videoAdModal.classList.add('active');
       elements.videoStatus.style.display = 'none';
-      
-      // Start tracking video watch time
       state.currentVideo = { url: randomVideo, startTime: Date.now(), watched: false };
-      
+
       state.videoCheckInterval = setInterval(() => {
         if (state.currentVideo && !state.currentVideo.watched) {
           const timeWatched = (Date.now() - state.currentVideo.startTime) / 1000;
-          
-          // If watched for at least 30 seconds (for demo, shorter than real app)
-          if (timeWatched >= 30) {
+          if (timeWatched >= CONFIG.VIDEO_WATCH_TIME) {
             state.currentVideo.watched = true;
             state.earnedPoints += 1.0;
             updateUI();
             saveState();
-            
-            // Show success message
-            elements.videoStatus.textContent = '✅ You earned 1.0 point for watching the full video!';
+            elements.videoStatus.textContent = '✅ সম্পূর্ণ ভিডিও দেখার জন্য ১.০ পয়েন্ট অর্জিত!';
             elements.videoStatus.className = 'status-message success-message';
             elements.videoStatus.style.display = 'block';
-            
-            // Clear interval
             clearInterval(state.videoCheckInterval);
             state.videoCheckInterval = null;
           }
         }
       }, 1000);
+    } catch (error) {
+      console.error('ভিডিও এড দেখার সময় ত্রুটি:', error);
+      showNotification('ভিডিও এড লোড করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Join Telegram bonus
-    function joinTelegramBonus() {
-  // যদি ইউজার আগে বোনাস না পেয়ে থাকে
-  if (!localStorage.getItem('tgBonusClaimed')) {
-    earnedPoints += 50.00;
-    updateStats();
-    localStorage.setItem('tgBonusClaimed', 'true');
-    alert("Congratulations! You received 50 bonus points!");
-  } else {
-    alert("You have already claimed the Telegram bonus.");
   }
-  // নতুন ট্যাবে লিংক খুলতে:
-  window.open("https://t.me/viralpaybdsupport", "_blank");
-}
-    
-    // Copy referral link
-    function copyReferralLink() {
-      const referralLink = `https://t.me/gotraps_bot?ref=${state.userId}`;
-      
-      navigator.clipboard.writeText(referralLink).then(() => {
-        showNotification('Referral link copied to clipboard!', 'success');
-        
-        // Award referral bonus if not already claimed
-        if (!state.referralCopied) {
-          state.earnedPoints += 15;
-          state.referralCopied = true;
-          updateUI();
-          saveState();
-          setTimeout(() => {
-            showNotification('+15 points awarded for sharing your referral link!', 'success');
-          }, 000);
-        }
-      }).catch(() => {
-        showNotification('Failed to copy referral link. Please try again.', 'error');
-      });
+  // Join Telegram bonus
+  function joinTelegramBonus() {
+    try {
+      if (!state.tgBonusClaimed) {
+        state.earnedPoints += 50;
+        state.tgBonusClaimed = true;
+        updateUI();
+        saveState();
+        showNotification('অভিনন্দন! আপনি ৫০ বোনাস পয়েন্ট পেয়েছেন!', 'success');
+      } else {
+        showNotification('আপনি ইতিমধ্যে টেলিগ্রাম বোনাস দাবি করেছেন।', 'info');
+      }
+      window.open("https://t.me/viralpaybdsupport", "_blank");
+    } catch (error) {
+      console.error('টেলিগ্রাম বোনাস দাবির সময় ত্রুটি:', error);
+      showNotification('টেলিগ্রাম বোনাস দাবি করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Withdraw points
-    function withdrawPoints() {
+  }
+
+  // Copy referral link
+  async function copyReferralLink() {
+    try {
+      const referralLink = https://t.me/tasksworknew_bot?ref=${state.userId};
+      await navigator.clipboard.writeText(referralLink);
+      showNotification('রেফারেল লিঙ্ক কপি করা হয়েছে!', 'success');
+      if (!state.referralCopied) {
+        state.earnedPoints += 15;
+        state.referralCopied = true;
+        updateUI();
+        saveState();
+        setTimeout(() => {
+          showNotification('রেফারেল লিঙ্ক শেয়ার করার জন্য +১৫ পয়েন্ট অর্জিত!', 'success');
+        }, 1000);
+      }
+    } catch (error) {
+      console.error('রেফারেল লিঙ্ক কপি করার সময় ত্রুটি:', error);
+      showNotification('রেফারেল লিঙ্ক কপি করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
+    }
+  }
+
+  // Withdraw points
+  function withdrawPoints() {
+    try {
       const amount = parseFloat(elements.withdrawAmount.value);
       const method = elements.paymentMethod.value;
-      const account = elements.withdrawAccount.value;
-      
+      const account = elements.withdrawAccount.value.trim();
+
       // Validation
-      if (isNaN(amount) {
-        showWithdrawStatus('Please enter a valid amount', 'error');
+      if (isNaN(amount) || amount <= 0) {
+        showWithdrawStatus('দয়া করে একটি বৈধ পরিমাণ লিখুন', 'error');
         return;
       }
-      
       if (amount < CONFIG.MIN_WITHDRAW) {
-        showWithdrawStatus(`Minimum withdrawal is ${CONFIG.MIN_WITHDRAW} points`, 'error');
+        showWithdrawStatus(ন্যূনতম উত্তোলন ${CONFIG.MIN_WITHDRAW} পয়েন্ট, 'error');
         return;
       }
-      
       if (amount > state.earnedPoints) {
-        showWithdrawStatus(`You only have ${state.earnedPoints.toFixed(2)} points`, 'error');
+        showWithdrawStatus(আপনার কাছে মাত্র ${state.earnedPoints.toFixed(2)} পয়েন্ট আছে, 'error');
         return;
       }
-      
       if (!account) {
-        showWithdrawStatus('Please enter your account number', 'error');
+        showWithdrawStatus('দয়া করে আপনার অ্যাকাউন্ট নম্বর লিখুন', 'error');
         return;
       }
-      
+      if (!/^[0-9+\-\s]+$/.test(account)) {
+        showWithdrawStatus('অবৈধ অ্যাকাউন্ট নম্বর ফরম্যাট', 'error');
+        return;
+      }
+
       // Process withdrawal
       state.earnedPoints -= amount;
       updateUI();
       saveState();
-      
-      // Send Telegram notification (simulated)
-      const message = `💰 *Withdrawal Request* 💰\n👤 User: ${state.username}\n🆔 ID: ${state.userId}\n💵 Amount: ${amount} points\n🏦 Method: ${method}\n📱 Account: ${account}\n⏰ Time: ${new Date().toLocaleString()}`;
+
+      // Sanitize inputs for Telegram message
+      const sanitizedAccount = account.replace(/[<>&]/g, '');
+      const message = 💰 *উত্তোলনের অনুরোধ* 💰\n👤 ইউজার: ${state.username}\n🆔 আইডি: ${state.userId}\n💵 পরিমাণ: ${amount} পয়েন্ট\n🏦 পদ্ধতি: ${method}\n📱 অ্যাকাউন্ট: ${sanitizedAccount}\n⏰ সময়: ${new Date().toLocaleString()};
       sendTelegramNotification(message);
-      
-      // Show success message
-      showWithdrawStatus('✅ Withdrawal request submitted successfully! Our team will process it within 24 hours.', 'success');
-      
-      // Reset form
+
+      showWithdrawStatus('✅ উত্তোলনের অনুরোধ সফলভাবে জমা দেওয়া হয়েছে! আমাদের টিম ২৪ ঘণ্টার মধ্যে এটি প্রক্রিয়া করবে।', 'success');
       elements.withdrawAmount.value = '';
       elements.withdrawAccount.value = '';
+    } catch (error) {
+      console.error('উত্তোলন প্রক্রিয়াকরণের সময় ত্রুটি:', error);
+      showWithdrawStatus('উত্তোলন প্রক্রিয়া করতে ব্যর্থ। দয়া করে আবার চেষ্টা করুন।', 'error');
     }
-    
-    // Show status message in withdraw modal
-    function showWithdrawStatus(message, type) {
-      elements.withdrawStatus.textContent = message;
-      elements.withdrawStatus.className = `status-message ${type}-message`;
-      elements.withdrawStatus.style.display = 'block';
-    }
-    
-    // Send Telegram notification (simulated)
-    function sendTelegramNotification(message) {
-      console.log('Telegram notification sent:', message);
-      // In a real app, this would use fetch() to send to Telegram Bot API
-      /*
-      fetch(`https://api.telegram.org/bot${CONFIG.BOT_TOKEN}/sendMessage`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          chat_id: CONFIG.ADMIN_USER_ID,
-          text: message,
-          parse_mode: "Markdown"
-        })
-      });
-      */
-    }
-    
-    // Show notification toast
-    function showNotification(message, type) {
-      // In a real app, this would show a nice toast notification
-      console.log(`[${type}] ${message}`);
-      alert(`[${type}] ${message}`);
-    }
-    
-    // Initialize the app when DOM is loaded
-    document.addEventListener('DOMContentLoaded', init);
-  </script>
+  }
 
-<script type='text/javascript' src='//pl26942056.profitableratecpm.com/e9/71/cb/e971cb51bff4286deb8e3f3bdc652cc7.js'></script>
+  // Show status message in withdraw modal
+  function showWithdrawStatus(message, type) {
+    elements.withdrawStatus.textContent = message;
+    elements.withdrawStatus.className = status-message ${type}-message;
+    elements.withdrawStatus.style.display = 'block';
+  }
 
+  // Send Telegram notification (simulated)
+  function sendTelegramNotification(message) {
+    console.log('টেলিগ্রাম বিজ্ঞপ্তি পাঠানো হয়েছে:', message);
+    // Uncomment below for actual Telegram API integration
+    /*
+    fetch(https://api.telegram.org/bot${CONFIG.BOT_TOKEN}/sendMessage, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: CONFIG.ADMIN_USER_ID,
+        text: message,
+        parse_mode: "Markdown"
+      })
+    }).catch(error => console.error('টেলিগ্রাম বিজ্ঞপ্তি পাঠানোর সময় ত্রুটি:', error));
+    */
+  }
+
+  // Show notification toast
+  function showNotification(message, type) {
+    elements.toast.textContent = message;
+    elements.toast.className = toast ${type} active;
+    setTimeout(() => {
+      elements.toast.className = toast ${type};
+    }, 3000);
+  }
+
+  // Initialize the app when DOM is loaded
+  document.addEventListener('DOMContentLoaded', init);
+</script>
 </body>
-</html>
+</html> 
